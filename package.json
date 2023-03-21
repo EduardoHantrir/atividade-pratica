@@ -1,7 +1,7 @@
 {
   "name": "site-videos",
   "version": "1.0.0",
-  "description": "Site de streaming de videos, series e filmes",
+  "description": "MoveiWave um site de streaming de videos, series e filmes",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
