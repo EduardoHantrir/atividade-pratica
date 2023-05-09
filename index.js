@@ -1,19 +1,19 @@
-const { urlencoded } = require('express');
+
 const express = require('express');
+
 const app = express();
 
 app.use(express.json());
 
 app.use(express.urlencoded({extended:true}));
 
-app.get('/', function (req, res) {
-    res.send('Inicio do MovieWave um site para ver filmes e series')
-  })
-  
-  app.listen(3000);
+// Criação de Rotas
+const filmesController = require('./controller/filmesController');
+app.use('/', filmesController);
 
-  /*Criação das rotas controller */
+const seriesController = require('./controller/seriesController');
+app.use('/', seriesController);
 
-
-  const autorController = require('./controller/autorController');
-  app.use('/', autorController);
+app.listen(3000, ()=>{ 
+  console.log('SERVIDOR RODANDO EM - http://localhost:3000'); 
+});

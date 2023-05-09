@@ -10,18 +10,7 @@
     "Videos",
     "Series",
     "Filmes",
-    "e",
-    "series",
-    "Streaming",
-    "Streaming",
-    "de",
-    "video",
-    "Streaming",
-    "de",
-    "filmes",
-    "Streaming",
-    "de",
-    "series"
+    "Streaming"
   ],
   "author": "Eduardo Euflausino",
   "license": "ISC",
@@ -29,7 +18,7 @@
     "express": "^4.18.2",
     "mysql2": "^3.2.0",
     "router": "^1.3.8",
-    "sequelize": "^6.30.0"
+    "sequelize": "^6.31.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
