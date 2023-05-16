@@ -3,16 +3,16 @@ const sequelize = require ('sequelize');
 const connection = require ('../database/database');
 
 
-const series = connection.define(
-    'tbl_series',
+const ator = connection.define(
+    'tbl_ator',
     {
-        nome_series:{
+        nome_ator:{
             type: sequelize.STRING,
             allowNull: false
         }
     }
 );
 
-//series.sync({force:true});
+//ator.sync({force:true});
 
-module.exports = series;
+module.exports = ator;

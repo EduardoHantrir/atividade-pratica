@@ -9,10 +9,6 @@ const filmes = connection.define(
         nome_filmes:{
             type: sequelize.STRING,
             allowNull: false
-        },
-        ano_lanc_filmes:{
-            type:sequelize.DATE,
-            allowNull: false
         }
     }
 );

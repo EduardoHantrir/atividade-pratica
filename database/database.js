@@ -4,7 +4,7 @@ const sequelize = require('sequelize');
 
 
 const connection =  new sequelize(
-    'movie_wave',
+    'moviewave',
     'root', 
     '',
     {

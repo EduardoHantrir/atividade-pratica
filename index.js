@@ -14,6 +14,12 @@ app.use('/', filmesController);
 const seriesController = require('./controller/seriesController');
 app.use('/', seriesController);
 
+const generosController = require('./controller/generosController');
+app.use('/', generosController);
+
+const atorController = require('./controller/atorController');
+app.use('/', atorController);
+
 app.listen(3000, ()=>{ 
   console.log('SERVIDOR RODANDO EM - http://localhost:3000'); 
 });
